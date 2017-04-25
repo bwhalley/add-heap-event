@@ -4,15 +4,12 @@ function updateHeapEvent(identity,date,event) {
   
   if (!identity || !date || !event) { 
    return "Missing Info";
-    //identity = 'andrew.bialecki@klaviyo.com';
-   // date = '4/21/2017';
-    //event = 'Signed Up';
   }
   
   Logger.log(identity, date, event);
   
   var url = 'https://heapanalytics.com/api/track'
-  var app_id = '91017801';
+  var app_id = 'Your ID Here';
   
   var timestamp = new Date(date);
   timestamp = timestamp.toISOString();
